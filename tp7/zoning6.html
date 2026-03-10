@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Zoning 6</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; font-size: 11px; height: 100vh; display: flex; flex-direction: column; }
+
+  .haut {
+    background: #5c6bc0;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #1a237e;
+    height: 35px;
+  }
+
+  .menu {
+    background: #7986cb;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #3949ab;
+    height: 28px;
+  }
+
+  .grille {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .grille div {
+    border: 1px solid #3949ab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+  }
+
+  .grille div:nth-child(odd)  { background: #5c6bc0; }
+  .grille div:nth-child(even) { background: #ef6c00; }
+
+  .bas {
+    background: #bdbdbd;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #757575;
+    height: 28px;
+  }
+</style>
+</head>
+<body>
+  <div class="haut">zone du haut</div>
+  <div class="menu">menu</div>
+  <div class="grille">
+    <div>PZ1</div><div>PZ2</div><div>PZ3</div><div>PZ4</div>
+    <div>PZ5</div><div>PZ6</div><div>PZ7</div><div>PZ8</div>
+    <div>PZ9</div><div>PZ10</div><div>PZ11</div><div>PZ12</div>
+    <div>PZ13</div><div>PZ14</div><div>PZ15</div><div>PZ16</div>
+  </div>
+  <div class="bas">Zone du bas</div>
+</body>
+</html>

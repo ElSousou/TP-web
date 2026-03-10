@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Zoning 3</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; font-size: 11px; height: 100vh; display: flex; flex-direction: column; }
+
+  .milieu {
+    display: flex;
+    flex: 1;
+  }
+
+  .gauche {
+    background: #4dd0e1;
+    width: 55%;
+    padding: 4px 6px;
+    border: 1px solid #00838f;
+  }
+
+  .droite {
+    background: #ab47bc;
+    flex: 1;
+    padding: 4px 6px;
+    border: 1px solid #6a1b9a;
+  }
+
+  .bas {
+    background: #ffee58;
+    padding: 4px 6px;
+    border: 1px solid #f9a825;
+    height: 35px;
+  }
+</style>
+</head>
+<body>
+  <div class="milieu">
+    <div class="gauche">gauche</div>
+    <div class="droite">droite</div>
+  </div>
+  <div class="bas">Bas</div>
+</body>
+</html>

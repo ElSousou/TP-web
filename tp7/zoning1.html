@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Zoning 1</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; font-size: 11px; height: 100vh; display: flex; flex-direction: column; }
+
+  .haut {
+    background: #e57373;
+    padding: 4px 6px;
+    border: 1px solid #c62828;
+    height: 40px;
+  }
+
+  .milieu {
+    display: flex;
+    flex: 1;
+  }
+
+  .gauche {
+    background: #64b5f6;
+    width: 18%;
+    padding: 4px 6px;
+    border: 1px solid #1565c0;
+  }
+
+  .centre {
+    background: #66bb6a;
+    flex: 1;
+    padding: 4px 6px;
+    border: 1px solid #2e7d32;
+  }
+</style>
+</head>
+<body>
+  <div class="haut">Zone du Haut</div>
+  <div class="milieu">
+    <div class="gauche">Zone de Gauche</div>
+    <div class="centre">Zone du Milieu</div>
+  </div>
+</body>
+</html>

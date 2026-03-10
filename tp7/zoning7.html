@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Zoning 7</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; font-size: 11px; height: 100vh; display: flex; flex-direction: column; }
+
+  .haut {
+    background: #5c6bc0;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #1a237e;
+    height: 35px;
+  }
+
+  .milieu {
+    display: flex;
+    flex: 1;
+  }
+
+  .gauche {
+    background: #5c6bc0;
+    color: white;
+    width: 13%;
+    padding: 4px 6px;
+    border: 1px solid #1a237e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .colonnes {
+    display: flex;
+    flex: 1;
+  }
+
+  .colonnes div {
+    background: #66bb6a;
+    flex: 1;
+    border: 1px solid #2e7d32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+  }
+
+  .droite {
+    background: #5c6bc0;
+    color: white;
+    width: 13%;
+    padding: 4px 6px;
+    border: 1px solid #1a237e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bas-wrapper {
+    display: flex;
+  }
+
+  .bas-vide {
+    width: 13%;
+    background: #5c6bc0;
+    border: 1px solid #1a237e;
+    height: 35px;
+  }
+
+  .bas {
+    background: #ffca28;
+    flex: 1;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #f57f17;
+    height: 35px;
+  }
+
+  .bas-vide2 {
+    width: 13%;
+    background: #5c6bc0;
+    border: 1px solid #1a237e;
+    height: 35px;
+  }
+</style>
+</head>
+<body>
+  <div class="haut">Zone du Haut</div>
+  <div class="milieu">
+    <div class="gauche">Zone de Gauche</div>
+    <div class="colonnes">
+      <div>Z1</div>
+      <div>Z2</div>
+      <div>Z3</div>
+      <div>Z4</div>
+      <div>Z5</div>
+    </div>
+    <div class="droite">Zone de Droite</div>
+  </div>
+  <div class="bas-wrapper">
+    <div class="bas-vide"></div>
+    <div class="bas">Zone du bas</div>
+    <div class="bas-vide2"></div>
+  </div>
+</body>
+</html>
